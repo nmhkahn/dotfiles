@@ -1,0 +1,28 @@
+theme = Atom One Dark
+
+# 폰트는 맥북에 설치된 Nerd Font를 추천 (없으면 JetBrains Mono 등)
+font-family = "Menlo"
+font-size = 18
+
+# 배경 투명도 (너무 투명하면 코드 가독성이 떨어지므로 은은하게)
+background-opacity = 0.95
+background-blur-radius = 20
+
+# --- Neovim / Tmux Integration ---
+# Tmux에서 마우스 스크롤/클릭 지원
+mouse-hide-while-typing = true
+
+# Option 키를 Alt 키로 사용하여 Neovim 단축키와 충돌 방지
+macos-option-as-alt = true
+
+# --- Performance ---
+# 커서 깜빡임 (취향에 따라 block, bar, underline 등 설정)
+cursor-style = block
+cursor-style-blink = false
+
+# 셸 통합 기능 (Shell Integration) 활성화
+shell-integration = zsh
+
+# --- Keybindings (맥북 네이티브 느낌 살리기) ---
+# 전체 화면 전환
+keybind = cmd+enter=toggle_fullscreen

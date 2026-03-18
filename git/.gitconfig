@@ -1,0 +1,5 @@
+[user]
+	name = Namhyuk Ahn
+	email = nmhkahn@gmail.com
+[core]
+	editor = nvim

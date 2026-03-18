@@ -1,0 +1,25 @@
+#!/bin/bash
+ADDR=210.107.192.247
+
+SRC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
+# get the working dir to send
+WORK_NAME=${PWD#"$HOME/Projects/"}
+IFS="/" read -ra WORK_NAME <<<"$WORK_NAME"
+WORK_DIR="$HOME/Projects/"$WORK_NAME
+
+echo Sending to server ${ADDR}...
+
+if [ "$1" == "all" ]; then
+  rsync -avrhc \
+    --exclude "*.git" --exclude "*.swp" --exclude "*.DS_Store" \
+    -e 'ssh -p 22' \
+    $WORK_DIR \
+    nhahn@${ADDR}:/home/nhahn/works/
+else
+  rsync -avz \
+    --exclude-from "$HOME/.mybins/ignore_ext" \
+    --exclude "*.git" --exclude "*.swp" --exclude "*.DS_Store" --exclude "*.txt" \
+    -e 'ssh -p 22' \
+    $WORK_DIR \
+    nhahn@${ADDR}:/home/nhahn/works/
+fi

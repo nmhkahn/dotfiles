@@ -1,5 +1,5 @@
 #!/bin/bash
-ADDR=210.107.192.247
+ADDR=165.246.38.29
 
 SRC_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" >/dev/null 2>&1 && pwd)"
 # get the working dir to send
@@ -14,12 +14,12 @@ if [ "$1" == "all" ]; then
     --exclude "*.git" --exclude "*.swp" --exclude "*.DS_Store" \
     -e 'ssh -p 22' \
     $WORK_DIR \
-    nhahn@${ADDR}:/home/nhahn/works/
+    nhahn@${ADDR}:/home/nhahn/Projects/
 else
   rsync -avz \
     --exclude-from "$HOME/.mybins/ignore_ext" \
     --exclude "*.git" --exclude "*.swp" --exclude "*.DS_Store" --exclude "*.txt" \
     -e 'ssh -p 22' \
     $WORK_DIR \
-    nhahn@${ADDR}:/home/nhahn/works/
+    nhahn@${ADDR}:/home/nhahn/Projects/
 fi

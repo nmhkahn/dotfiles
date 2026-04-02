@@ -34,8 +34,5 @@ if [[ "$(uname)" == "Darwin" ]]; then
     export PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
 fi
 
-# venv (activate only if exists)
-[[ -f ~/Projects/.venv/.base/bin/activate ]] && source ~/Projects/.venv/.base/bin/activate
-
 # Machine-local settings (API keys, etc.) — not tracked by git
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local

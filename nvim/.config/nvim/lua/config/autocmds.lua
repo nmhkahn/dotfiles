@@ -6,3 +6,15 @@
 --
 -- Or remove existing autocmds by their group name (which is prefixed with `lazyvim_` for the defaults)
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
+--
+-- spell: LazyVim의 filetype autocmd보다 나중에 실행되도록 설정
+
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "*",
+  callback = function()
+    vim.opt_local.spell = false
+  end,
+})
+
+-- diagnostics 끄기
+vim.diagnostic.enable(false)

@@ -1,11 +1,11 @@
 {
-  "effortLevel"  "high",
-  "statusLine"  {
-    "type"  "command",
-    "command"  "bash /Users/nhahn/.claude/statusline-command.sh"
+  "effortLevel": "high",
+  "statusLine": {
+    "type": "command",
+    "command": "bash /Users/nhahn/.claude/statusline-command.sh"
   },
-  "permissions"  {
-    "allow"  [
+  "permissions": {
+    "allow": [
       "Read",
       "Edit",
       "Write",

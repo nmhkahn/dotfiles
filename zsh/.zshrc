@@ -36,3 +36,5 @@ fi
 
 # Machine-local settings (API keys, etc.) — not tracked by git
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+cd ~/Projects/

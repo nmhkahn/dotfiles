@@ -38,3 +38,6 @@ fi
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 cd ~/Projects/
+
+export CLAUDE_CODE_EFFORT_LEVEL=max
+export CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING=1

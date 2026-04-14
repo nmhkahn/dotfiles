@@ -2,7 +2,7 @@
   "effortLevel": "high",
   "statusLine": {
     "type": "command",
-    "command": "bash /home/nhahn/.claude/statusline-command.sh"
+    "command": "bash $HOME/.claude/statusline-command.sh"
   },
   "permissions": {
     "allow": [

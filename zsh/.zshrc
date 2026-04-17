@@ -39,5 +39,5 @@ fi
 
 cd ~/Projects/
 
-alias cc='CLAUDE_CODE_EFFORT_LEVEL=max CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING=1 claude'
+alias cc='CLAUDE_CODE_EFFORT_LEVEL=max claude'
 

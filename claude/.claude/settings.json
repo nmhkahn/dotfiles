@@ -46,12 +46,14 @@
       "Bash(python3 *)",
       "Bash(uv run *)",
       "Bash(uv sync *)"
-    ]
+    ],
+    "defaultMode": "auto"
   },
   "statusLine": {
     "type": "command",
     "command": "bash $HOME/.claude/statusline-command.sh"
   },
   "effortLevel": "high",
+  "skipAutoPermissionPrompt": true,
   "agentPushNotifEnabled": true
 }

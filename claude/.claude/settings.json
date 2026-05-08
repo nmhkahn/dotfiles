@@ -1,9 +1,4 @@
 {
-  "effortLevel": "high",
-  "statusLine": {
-    "type": "command",
-    "command": "bash $HOME/.claude/statusline-command.sh"
-  },
   "permissions": {
     "allow": [
       "Read",
@@ -52,5 +47,11 @@
       "Bash(uv run *)",
       "Bash(uv sync *)"
     ]
-  }
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "bash $HOME/.claude/statusline-command.sh"
+  },
+  "effortLevel": "high",
+  "agentPushNotifEnabled": true
 }

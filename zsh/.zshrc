@@ -37,7 +37,5 @@ fi
 # Machine-local settings (API keys, etc.) — not tracked by git
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
-cd ~/Projects/
-
 alias cc='CLAUDE_CODE_EFFORT_LEVEL=max claude'
 
